@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         
         initSports();
         
+        self.gridCollectionView.itemViewName = "GridItemView"
         self.gridCollectionView.setDataArray(data: sports!)
     }
     

@@ -11,6 +11,7 @@ import UIKit
 class GridCollectionView : UICollectionView, UICollectionViewDelegateFlowLayout {
     
     var dataArray: [Sport] = [];
+    var itemViewName : String = "";
     
     @IBInspectable
     var cellMarginSize: CGFloat = 3.0
@@ -20,16 +21,16 @@ class GridCollectionView : UICollectionView, UICollectionViewDelegateFlowLayout 
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        setUp()
+        setUp(itemViewName: itemViewName)
     }
     
-    func setUp() {
+    func setUp(itemViewName: String) {
         // Set Delegates
         self.delegate = self
         self.dataSource = self
         
         // Register cells
-        self.register(UINib(nibName: "ItemCell", bundle: nil), forCellWithReuseIdentifier: "ItemCell")
+        self.register(UINib(nibName: itemViewName, bundle: nil), forCellWithReuseIdentifier: itemViewName)
         
         // SetupGrid view
         self.setupGridView()
@@ -53,7 +54,7 @@ extension GridCollectionView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCell", for: indexPath) as! ItemCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: itemViewName, for: indexPath) as! GridItemView
         cell.setItemName(text: self.dataArray[indexPath.row].name + " " + self.dataArray[indexPath.row].id)
         cell.iconImage.backgroundColor = UIColor.red
         

@@ -1,5 +1,5 @@
 //
-//  ItemCell.swift
+//  GridItemView.swift
 //  GridViewExampleApp
 //
 //  Created by Chandimal, Sameera on 12/22/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemCell: UICollectionViewCell {
+class GridItemView: UICollectionViewCell {
     
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var textLabel: UILabel!

@@ -12,9 +12,9 @@
 		2162EB4D225F7C8300992E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2162EB4C225F7C8300992E42 /* Assets.xcassets */; };
 		2162EB50225F7C8300992E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2162EB4E225F7C8300992E42 /* LaunchScreen.storyboard */; };
 		2162EB5E225F889100992E42 /* GridCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162EB5D225F889100992E42 /* GridCollectionView.swift */; };
-		2162EB62225F946000992E42 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2162EB5F225F945F00992E42 /* ItemCell.xib */; };
+		2162EB62225F946000992E42 /* GridItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2162EB5F225F945F00992E42 /* GridItemView.xib */; };
 		2162EB63225F946000992E42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162EB60225F945F00992E42 /* ViewController.swift */; };
-		2162EB64225F946000992E42 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162EB61225F945F00992E42 /* ItemCell.swift */; };
+		2162EB64225F946000992E42 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162EB61225F945F00992E42 /* GridItemView.swift */; };
 		2162EB67225F94AA00992E42 /* Sports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162EB66225F94AA00992E42 /* Sports.swift */; };
 		2162EB6B225F990200992E42 /* sports.json in Resources */ = {isa = PBXBuildFile; fileRef = 2162EB6A225F990200992E42 /* sports.json */; };
 /* End PBXBuildFile section */
@@ -27,9 +27,9 @@
 		2162EB4F225F7C8300992E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2162EB51225F7C8300992E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2162EB5D225F889100992E42 /* GridCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionView.swift; sourceTree = "<group>"; };
-		2162EB5F225F945F00992E42 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		2162EB5F225F945F00992E42 /* GridItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridItemView.xib; sourceTree = "<group>"; };
 		2162EB60225F945F00992E42 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2162EB61225F945F00992E42 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		2162EB61225F945F00992E42 /* GridItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		2162EB66225F94AA00992E42 /* Sports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sports.swift; sourceTree = "<group>"; };
 		2162EB6A225F990200992E42 /* sports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sports.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,8 +79,8 @@
 		2162EB65225F947500992E42 /* GridCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				2162EB61225F945F00992E42 /* ItemCell.swift */,
-				2162EB5F225F945F00992E42 /* ItemCell.xib */,
+				2162EB61225F945F00992E42 /* GridItemView.swift */,
+				2162EB5F225F945F00992E42 /* GridItemView.xib */,
 				2162EB5D225F889100992E42 /* GridCollectionView.swift */,
 			);
 			path = GridCollectionView;
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2162EB50225F7C8300992E42 /* LaunchScreen.storyboard in Resources */,
-				2162EB62225F946000992E42 /* ItemCell.xib in Resources */,
+				2162EB62225F946000992E42 /* GridItemView.xib in Resources */,
 				2162EB4D225F7C8300992E42 /* Assets.xcassets in Resources */,
 				2162EB6B225F990200992E42 /* sports.json in Resources */,
 				2162EB4B225F7C7800992E42 /* Main.storyboard in Resources */,
@@ -171,7 +171,7 @@
 				2162EB67225F94AA00992E42 /* Sports.swift in Sources */,
 				2162EB63225F946000992E42 /* ViewController.swift in Sources */,
 				2162EB5E225F889100992E42 /* GridCollectionView.swift in Sources */,
-				2162EB64225F946000992E42 /* ItemCell.swift in Sources */,
+				2162EB64225F946000992E42 /* GridItemView.swift in Sources */,
 				2162EB46225F7C7800992E42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
